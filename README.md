@@ -1,17 +1,25 @@
 # machine_learning_project-unsupervised-learning
 
-## Project Outcomes
-- Unsupervised Learning: perform unsupervised learning techniques on a wholesale data dataset. The project involves four main parts: exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and PCA.
-### Duration:
-Approximately 1 hour and 40 minutes
-### Project Description:
-In this project, we will apply unsupervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Project Goals
+This goal of this project is to apply unsupervised learning techniques to the "Wholesale Data" dataset to uncover patterns in grocery product sales and group similar data points. 
+Key tasks include:
+Exploratory Data Analysis (EDA): Cleaning the dataset, analyzing variable relationships, handling missing values and outliers, and performing feature engineering.
+Unsupervised Learning: Utilizing K-means clustering, hierarchical clustering, and PCA to identify customer patterns, determine the optimal number of clusters, and visualize insights.
+The goal is to extract actionable insights from the data and communicate findings effectively through visualizations and metrics, enabling stakeholders to make informed business decisions.
 
-The data set for this project is the "Wholesale Data" dataset containing information about various products sold by a grocery store.
-The project will involve the following tasks:
+## Process
+The project began with Exploratory Data Analysis (EDA), involving data cleaning, outlier removal, and visualizations to uncover trends and relationships. The data was then standardized using StandardScaler to prepare it for clustering. K-Means clustering identified optimal customer segments using the Elbow Method, which were further validated through hierarchical clustering. Finally, dimensionality reduction with PCA simplified data visualization, and the resulting clusters were analyzed to extract actionable business insights.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Unsupervised learning: We will use the Wholesale Data dataset to perform k-means clustering, hierarchical clustering, and principal component analysis (PCA) to identify patterns and group similar data points together. We will determine the optimal number of clusters and communicate the insights gained through data visualization.
+## Results
+- The analysis identified four distinct customer segments based on spending patterns, highlighting differences such as preferences for fresh produce versus cleaning supplies. 
+- Strong correlations were observed among Milk, Grocery, and Detergents_Paper, while Fresh and Frozen categories showed weaker relationships. 
+- Clustering revealed actionable insights, distinguishing customers focused on specialty products from those with balanced spending. 
+- PCA visualization further validated the clusters, enhancing interpretability and clarity.
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+## Chalanges
+- Handling Outliers: Many variables exhibited extreme values, requiring careful preprocessing.
+- Data Imbalance: Skewed distributions in spending categories required normalization and scaling.
 
+## Future Goals
+- Explore supervised learning to predict future purchases or behavior based on customer characteristics.
+- Time-Series Analysis: Analyze customer spending patterns over time to identify trends, seasonality, and changes in preferences.
